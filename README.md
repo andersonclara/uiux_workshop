@@ -326,7 +326,7 @@ Before we start designing, it helps to understand the difference between **UI** 
 - **UI (User Interface):** How a product looks — colors, typography, buttons, spacing, images, and other visual elements.
 - **UX (User Experience):** How a product works and feels — navigation, usability, accessibility, organization, and the overall experience of using it.
 
-A typical design-to-development process might look like:
+A typical design-to-development process looks like:
 
 **Idea → UX → Wireframe → UI → Figma → Frontend → Test → Iterate**
 
@@ -341,7 +341,7 @@ When designing an interface, keep these principles in mind:
 - **Consistency:** Reuse colors, typography, components, and patterns throughout your design.
 - **Balance:** Distribute elements so the interface feels visually stable.
 
-Good design isn't just about making something look nice — it should make the interface easier to understand and use.
+Good design isn't just about making something look nice. It should also make the interface easier to understand and use **intuitively**.
 
 ---
 
@@ -372,4 +372,4 @@ During the workshop, we went from:
 
 ---
 
-Happy designing and building! 🎨💻
+Thank you for following along! Happy designing!
