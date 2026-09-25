@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-* {
+/* global layout settings */
+
+* { 
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif; /*auto applies Inter font to all text*/
 }
 
 #root {
@@ -27,28 +29,30 @@ body {
   text-align: center;
 }
 
+/* PROJECT CARD & GRID*/
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 300px);
 
-  row-gap: 29px;
-  column-gap: 96px;
-  
+  row-gap: px; /* fill in values from figma for row and column gaps */
+  column-gap: px;
+
   justify-content: center;
 }
 
-/* PROJECT CARD */
 
-.project-card {
-  width: 300px;
-  height: 280px;
-  background: #ffffff;
+.project-card { /* fill in values from figma for size, color, and corner radius */
+  width: px; 
+  height: px;
 
-  border: 1px solid rgba(8, 71, 116, 0.21);
-  border-radius: 17px;
+  background: #HEXCODE; 
+  border: 1px solid #HEXCODE;
+  border-radius: px;
+
   overflow: hidden;
 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px #HEXCODE; 
 }
 
 

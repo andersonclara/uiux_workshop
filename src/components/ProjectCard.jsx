@@ -1,42 +1,21 @@
-import { useState } from "react";
+function ProjectCard(/* TODO: add props */) {
 
-function ProjectCard({ title, description, technologies, link }) {
-      const [image, setImage] = useState(null);
-
-  function handleImageUpload(event) {
-    const file = event.target.files[0];
-
-    if (file) {
-      setImage(URL.createObjectURL(file));
-    }
-  }
+    /* BONUS TODO: add image upload function using useState */
 
   return (
     <div className="project-card">
 
-      <div className="project-image">
-        {image ? (
-          <img src={image} alt="Project preview" />
-        ) : (
-          <label className="upload-area">
-            <span>Upload project image</span>
 
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleImageUpload}
-              hidden
-            />
-          </label>
-        )}
+      <div> 
+        <span>Project Image</span> {/* BONUS TODO: add image upload interaction */}
       </div>
 
-      <div className="project-card-content">
+      <div className="project-card-content"> {/* TODO: Replace hardcoded content with props */}
 
-        <h2>{title}</h2>
+        <h2>Project Title</h2>
 
         <p className="project-description">
-          {description}
+          Project description
         </p>
 
         <div className="tech-heading">
@@ -44,19 +23,15 @@ function ProjectCard({ title, description, technologies, link }) {
           <div className="tech-line"></div>
         </div>
 
-        <div className="tech-tags">
-          {technologies.map((technology) => (
-            <span className="tech-tag" key={technology}>
-              {technology}
-            </span>
-          ))}
+        <div className="tech-tags"> {/* TODO: replace hardcoded tags so you can generate tech tags dynamically */}
+          <span className="tech-tag">React</span>
+          <span className="tech-tag">Figma</span>
+          <span className="tech-tag">HTML</span>
         </div>
 
         <a
           className="project-link"
-          href={link}
-          target="_blank"
-          rel="noreferrer"
+          href="#"
         >
           View project →
         </a>
